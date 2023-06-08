@@ -1,12 +1,15 @@
-import styles from "../styles/Home.module.css";
-import InstructionsComponent from "../components/InstructionsComponent";
-
-export default function Home() {
+import React from "react";
+import TokensBalanceDisplay from "../components/tokensBalanceDisplay.jsx";
+import TransactionsHistoryDisplay from "../components/transactionsHistoryDisplay.jsx";
+ export default function MyComponent() {
   return (
     <div>
-      <main className={styles.main}>
-        <InstructionsComponent></InstructionsComponent>
-      </main>
+      <h1>My Component</h1>
+      <TokensBalanceDisplay walletAddress={"0xshah.eth"} chain={"ETH_MAINNET"} />
     </div>
   );
 }
+<div>
+      <h1>My Component</h1>
+      <TransactionsHistoryDisplay walletAddress={"vitalik.eth"} />
+    </div>
